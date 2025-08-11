@@ -1,0 +1,150 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-color: black;
+  }
+  
+  /* Navigation */
+  .horizontal_navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li.hr {
+    float: left;
+  }
+  
+  li.hr a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  li.hr a:hover {
+    background-color: #F662B9;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 50px; /* adjust for fixed navbar */
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  
+  /* Team Section */
+  .our_Team {
+    padding: 64px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .details {
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Work & Chatbot Section */
+  .work, .chatbot {
+    padding: 64px 10%;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Button */
+  .button {
+    background-color: #19F768;
+    color: #191BF7;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  .button span {
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: relative;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .button:hover span {
+    padding-right: 15px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    left: 5px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    margin: 5px 2px;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 1.0;
+  }
+  
+  .fa-facebook { background: #3B5998; color: white; }
+  .fa-twitter { background: #55ACEE; color: white; }
+  .fa-google { background: #dd4b39; color: white; }
+  .fa-linkedin { background: #007bb5; color: white; }
+  .fa-youtube { background: #bb0000; color: white; }
+  .fa-instagram { background: #125688; color: white; }
+  
