@@ -37,14 +37,14 @@ Kaira is a web-based chatbot designed to provide university-related information 
    python app.py
 5. Open your browser at http://localhost:5000 to interact with Kaira.
 
-##Model Training
+## Model Training
 
 - The RNN model is trained on a JSON dataset containing 45 intents with associated patterns and responses.
 - Text data is tokenized, lemmatized, and preprocessed using NLTK.
 - The model is trained for 500 epochs with Adam optimizer and categorical cross-entropy loss.
 - Dropout layers are applied to reduce overfitting.
 
-##Future Enhancements
+## Future Enhancements
 - Integrate with official university platforms for live data updates.
 - Add text-to-speech functionality for better interaction.
 - Implement user authentication for personalized experiences.
